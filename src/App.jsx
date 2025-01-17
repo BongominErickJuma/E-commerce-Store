@@ -18,17 +18,17 @@ function App() {
           <Navbar />
           <div className="main">
             <Routes>
-              <Route exact path="/foodstore" element={<Home />} />
+              <Route exact path="/E-commerce-Store" element={<Home />} />
               <Route
                 exact
-                path="/foodstore/menu"
+                path="/E-commerce-Store/menu"
                 element={
                   <Menu>
                     <MenuList />
                   </Menu>
                 }
               />
-              <Route exact path="/foodstore/cart" element={<Cart />} />
+              <Route exact path="/E-commerce-Store/cart" element={<Cart />} />
               <Route exact path="*" element={<h1>Page not found</h1>} />
             </Routes>
           </div>

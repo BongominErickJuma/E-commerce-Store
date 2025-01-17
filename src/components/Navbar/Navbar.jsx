@@ -35,14 +35,14 @@ const Navbar = () => {
             className="logo"
           />
         </div>
-        <NavLink to="/foodstore" className="heading-2">
+        <NavLink to="/E-commerce-Store" className="heading-2">
           Restaurant
         </NavLink>
       </div>
 
       <nav className="navbar">
         <div className="cart me-5" ref={cartRef}>
-          <Link to="/foodstore/cart">
+          <Link to="/E-commerce-Store/cart">
             <img
               src={`${import.meta.env.BASE_URL}/images/icon-add-to-cart.svg`}
               alt="icon add to cart"
@@ -52,12 +52,12 @@ const Navbar = () => {
         </div>
         <ul className={`nav_list ${isSidebarToggled ? "toggled" : ""}`}>
           <li onClick={() => handleToggleSideBar()}>
-            <Link to="/foodstore" className="para-1">
+            <Link to="/E-commerce-Store" className="para-1">
               Home
             </Link>
           </li>
           <li onClick={() => handleToggleSideBar()}>
-            <Link to="/foodstore/menu" className="para-1">
+            <Link to="/E-commerce-Store/menu" className="para-1">
               Menu
             </Link>
           </li>
