@@ -2,11 +2,6 @@ import "./Home.css";
 import bg from "../../Assets/herobg.jpg";
 import phone from "../../Assets/icon-phone.svg";
 import { Link } from "react-router-dom";
-import Services from "./Services/Services";
-import Impact from "./Impact/Impact";
-import Contact from "./Contact/Contact";
-import Testimonials from "./Testimonials/Testimonials";
-// import About from "./About/About";
 
 const Home = () => {
   return (
@@ -20,17 +15,14 @@ const Home = () => {
               </h2>
               <p>Delivering great food for more than 18 years!</p>
               <div className="d-flex mt-4">
-                <Link to="/restaurant/categories" className="cta-btn">
-                  Our Menu
+                <Link to="/E-commerce-Store/menu" className="cta-btn">
+                  Add Items
                 </Link>
-                <a href="#book-a-table" className="cta-btn">
-                  Book a Table
-                </a>
               </div>
               <div className="social-links my-5">
                 <a href="#" className="phone">
                   <img src={phone} alt="phone" />
-                  0785557587 | 0757378424
+                  077508904 | 0786146150
                 </a>
                 <a href="#" className="whatsaap">
                   <i className="bi bi-whatsapp"></i>
@@ -49,11 +41,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <About /> */}
-      <Services />
-      <Testimonials />
-      <Impact />
-      <Contact />
     </>
   );
 };

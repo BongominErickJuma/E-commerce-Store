@@ -52,13 +52,8 @@ const Navbar = () => {
         </div>
         <ul className={`nav_list ${isSidebarToggled ? "toggled" : ""}`}>
           <li onClick={() => handleToggleSideBar()}>
-            <Link to="/E-commerce-Store" className="para-1">
-              Home
-            </Link>
-          </li>
-          <li onClick={() => handleToggleSideBar()}>
             <Link to="/E-commerce-Store/menu" className="para-1">
-              Menu
+              Add Items
             </Link>
           </li>
         </ul>
