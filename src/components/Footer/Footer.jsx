@@ -4,14 +4,14 @@ const Footer = () => {
     <div>
       <footer id="footer" className="footer">
         <div className="container">
-          <div className="copyright text-center ">
+          <div className="copyright ">
             <p>
               © <span>Copyright</span>{" "}
               <strong className="px-1 sitename">Restairant</strong>
               <span>All Rights Reserved</span>
             </p>
           </div>
-          <div className="social-links d-flex justify-content-center">
+          <div className="social-links d-flex ">
             <a href="">
               <i className="bi bi-twitter-x"></i>
             </a>

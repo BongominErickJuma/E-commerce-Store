@@ -1,11 +1,9 @@
 .hero {
   width: 100%;
-  min-height: 100vh;
   position: relative;
-  padding: 80px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -16,7 +14,7 @@
 .hero .information {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -31,15 +29,17 @@
   border-radius: 10px;
 }
 
-.hero h2 {
+.hero .welcome {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 
-.hero h2 span {
+.hero .welcome span {
+  display: block;
   color: var(--red);
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .hero p {

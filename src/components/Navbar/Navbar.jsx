@@ -50,13 +50,6 @@ const Navbar = () => {
             <span className="cartCount">{cart.length}</span>
           </Link>
         </div>
-        <ul className={`nav_list ${isSidebarToggled ? "toggled" : ""}`}>
-          <li onClick={() => handleToggleSideBar()}>
-            <Link to="/E-commerce-Store/menu" className="para-1">
-              Add Items
-            </Link>
-          </li>
-        </ul>
 
         <i
           className={`mobile-nav-toggle bi ${

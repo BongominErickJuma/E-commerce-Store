@@ -15,24 +15,24 @@ function MenuItem({ menu }) {
 
   return (
     <li className="menu">
-      <picture>
-        {/* For large screens (desktops) */}
+      {/* <picture>
         <source media="(min-width: 1024px)" srcSet={menu.image.desktop} />
-
-        {/* For medium screens (tablets) */}
         <source media="(min-width: 768px)" srcSet={menu.image.tablet} />
-
-        {/* For small screens (mobile) */}
         <source media="(max-width: 767px)" srcSet={menu.image.mobile} />
-
-        {/* Fallback image for unsupported browsers */}
         <img
           className="menu__image"
-          src={menu.image.thumbnail}
+         
+          src={`${import.meta.env.BASE_URL}${menu.image.thumbnail}`}
           alt={menu.name}
         />
-      </picture>
-      s
+      </picture> */}
+      <img
+        className="menu__image"
+        // src={menu.image.thumbnail}
+        src={`${import.meta.env.BASE_URL}${menu.image.thumbnail}`}
+        alt={menu.name}
+      />
+
       {count < 1 ? (
         <AddToCartBtn menu={menu} />
       ) : (
